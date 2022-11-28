@@ -13,11 +13,9 @@ int main()
 	initializeGrid(player.grid);
 	initializeGrid(opponent.grid);
 
-	player.grid[3][3].ship = CARRIER;
+
+	askPlayerToPlace(player, opponent);
+	askPlayerToPlace(player, opponent);
 
 	displayGrid(player, opponent);
-
-	Coordinate test;
-
-	cout << checkCoordinate("e5", test) << endl;
 }
